@@ -1,0 +1,40 @@
+# TruthLens - Fake News Detector
+
+A machine learning based fake news detection web application built using Python, Streamlit, NLP, and Scikit-learn.
+
+## Features
+- Detects fake and real news articles
+- Modern futuristic UI using Streamlit
+- TF-IDF vectorization
+- Logistic Regression model
+- Confidence score visualization
+
+## Tech Stack
+- Python
+- Streamlit
+- Scikit-learn
+- NLTK
+- TF-IDF
+
+## Machine Learning Pipeline
+1. Text preprocessing
+2. Stopword removal
+3. Lemmatization
+4. TF-IDF vectorization
+5. Logistic Regression classification
+
+## Accuracy
+~98.8% Accuracy on test dataset
+
+## Files
+- `app.py` → Streamlit frontend
+- `train_model.py` → Model training script
+- `model.pkl` → Trained ML model
+- `vectorizer.pkl` → TF-IDF vectorizer
+
+## Run Locally
+
+```bash
+pip install -r requirements.txt
+python train_model.py
+python -m streamlit run app.py
